@@ -26,7 +26,7 @@ jobs:
     - name: Compile
       run: |
         npm install
-        gatsby build
+        npx gatsby build
         git add .
         git commit -am "Automated build from github actions"
         git push -u origin master
