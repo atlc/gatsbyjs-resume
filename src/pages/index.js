@@ -48,11 +48,11 @@ class HomeIndex extends React.Component {
                             <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         </header>
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions row">
+                        <ul className="actions row uniform">
                             <li>
-                                <a href="#education" className="button">Education</a>
-                                <a href="#experience" className="button">Experience</a>
-                                <a href="#projects" className="button">Portfolio</a>
+                                <a href="#education" className="button 3u">Education</a>
+                                <a href="#experience" className="button 3u">Experience</a>
+                                <a href="#projects" className="button 3u">Portfolio</a>
                             </li>
                         </ul>
                     </section>
@@ -66,17 +66,11 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="experience">
-                        <header className="major">
-                            <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
-                        </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions row">
-                            <li>
-                                <a href="#education" className="button">Education</a>
-                                <a href="#experience" className="button">Experience</a>
-                                <a href="#projects" className="button">Portfolio</a>
-                            </li>
-                        </ul>
+                        <h2>Experience</h2>
+                        <hr />
+                        <p><strong>Full-stack JS Antidegree</strong>; <em>Covalence.io (2020 > Present)</em><br /></p>
+                        <p><strong>A.S., Mathematics</strong>; <em>Jefferson State Community College (2020 > Present)</em><br /></p>
+                        <p><strong>A.A.S., Computer Science – Programming</strong>; <em>Jefferson State Community College (2018)</em><br />- The 2016 recipient of the College Scholar’s Award<br />- Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.<br />- Full tuition scholarship</p>
                     </section>
 
                     <section id="projects">
