@@ -31,8 +31,8 @@ const DEFAULT_IMAGES = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Andrew Cartwright - Portfolio"
+        const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
 
         return (
             <Layout>
@@ -54,8 +54,8 @@ class HomeIndex extends React.Component {
                         </ul>
                     </section>
 
-                    <section id="two">
-                        <h2>Recent Work</h2>
+                    <section id="projects">
+                        <h2>Projects</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
                             source,
