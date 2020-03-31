@@ -48,29 +48,63 @@ class HomeIndex extends React.Component {
                             <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         </header>
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions row uniform">
-                            <li>
-                                <a href="#education" className="button 3u">Education</a>
-                                <a href="#experience" className="button 3u">Experience</a>
-                                <a href="#projects" className="button 3u">Portfolio</a>
-                            </li>
+                        <ul className="actions">
+                            <li><a href="#education" className="button 3u">Education</a></li>
+                            <li><a href="#experience" className="button 3u">Experience</a></li>
+                            <li><a href="#certifications" className="button 3u">Certifications</a></li>
+                            <li><a href="#projects" className="button 3u">Portfolio</a></li>
                         </ul>
                     </section>
 
                     <section id="education">
                         <h2>Education</h2>
                         <hr />
-                        <p><strong>Full-stack JS Antidegree</strong>; <em>Covalence.io (2020 > Present)</em><br /></p>
-                        <p><strong>A.S., Mathematics</strong>; <em>Jefferson State Community College (2020 > Present)</em><br /></p>
-                        <p><strong>A.A.S., Computer Science – Programming</strong>; <em>Jefferson State Community College (2018)</em><br />- The 2016 recipient of the College Scholar’s Award<br />- Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.<br />- Full tuition scholarship</p>
+                        <p><strong>Full-stack JS Antidegree</strong>,&nbsp;&nbsp;&nbsp;<em>Covalence.io (2020 > Present)</em><br /></p>
+                        <p><strong>A.S. Mathematics, A.S. Physics</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2020 > Present)</em><br /></p>
+                        <p>
+                            <strong>A.A.S. Computer Science – Programming</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2018)</em>
+                            <article className="work-item"><p><br />- The 2016 recipient of the College Scholar’s Award<br />- Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.<br />- Full tuition scholarship</p></article>
+                        </p>
                     </section>
 
                     <section id="experience">
                         <h2>Experience</h2>
                         <hr />
-                        <p><strong>Full-stack JS Antidegree</strong>; <em>Covalence.io (2020 > Present)</em><br /></p>
-                        <p><strong>A.S., Mathematics</strong>; <em>Jefferson State Community College (2020 > Present)</em><br /></p>
-                        <p><strong>A.A.S., Computer Science – Programming</strong>; <em>Jefferson State Community College (2018)</em><br />- The 2016 recipient of the College Scholar’s Award<br />- Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.<br />- Full tuition scholarship</p>
+                        <p>
+                            <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > March 2020)</em>
+                            <br />
+                            <article className="work-item"><p>
+                                <br />- Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'} JSON, COBOL source code, or COBOL linkage files {'}'} into a Markdown table describing the schema to allow direct importation of the table into API documentation
+                                <br />- Created CI/CD server with Jenkins and created multiple pipelines to build & deploy various projects
+                                <br />- Created a Chocolatey server and automated packaging of the application's components to improve management and deployment to client sites
+                                <br />- Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
+                                <br />- Created tools with Node to generate millions of records for a sterile dataset
+                            </p></article>
+                        </p>
+                        <p>
+                            <strong>Computer Lab Technician</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (July 2018 > August 2019)</em>
+                            <br />
+                            <article className="work-item"><p>
+                                <br />- Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
+                                <br />- Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
+                                <br />- Wrote multiple batch scripts to resolve common issues students experienced in the labs
+                                <br />- Wrote multiple Tampermonkey scripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities.
+                            </p></article>
+                        </p>
+                        <p>
+                            <strong>Kennel Technician, Vet Tech Assistant</strong>,&nbsp;&nbsp;&nbsp;<em>Caldwell Mill Animal Clinic (August 2017 > June 2019)</em>
+                            <br />
+                            <article><p>
+                                <br />- <strong>{'{ INSERT BUTTON TO POPUP LIGHTBOX MODAL WITH BEST OF CMAC PICS }'}</strong>
+                            </p></article>
+                        </p>
+                        <p>
+                            <strong>Rideshare Driver</strong>,&nbsp;&nbsp;&nbsp;<em>Uber & Lyft (January 2017 > August 2019)</em>
+                            <br />
+                            <article className="work-item"><p>
+                                <br />While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi3 and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished.
+                            </p></article>
+                        </p>
                     </section>
 
                     <section id="projects">
