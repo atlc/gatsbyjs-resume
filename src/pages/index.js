@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
@@ -19,6 +18,9 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
+import Swal from 'sweetalert2';
+import retropieVideo from '../assets/images/car_retropie_silent.mp4';
+
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -29,10 +31,24 @@ const DEFAULT_IMAGES = [
 ];
 
 class HomeIndex extends React.Component {
-
     render() {
         const siteTitle = "Andrew Cartwright - Portfolio"
         const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
+        let showVid = false;
+        const displayVid = () => {
+            if (showVid) {
+                Swal.fire({
+                    html:
+                    `<div style="position: relative;padding-bottom: 56.25%;padding-top: 35px;height: 0;overflow: hidden;">
+                        <video style="position: absolute;top:0;left: 0;width: 100%;height: 100%;" controls><source src="${retropieVideo}" type="video/mp4"></video>    
+                    </div>`,
+                    width: '75vw',
+                    height: '75vh',
+                    confirmButtonText: 'Neat!',
+                    onClose: () => showVid = !showVid
+                })
+            }
+        }
 
         return (
             <Layout>
@@ -70,7 +86,7 @@ class HomeIndex extends React.Component {
                     <section id="experience">
                         <h2>Experience</h2>
                         <hr />
-                        <p>
+                        <div>
                             <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > March 2020)</em>
                             <br />
                             <article className="work-item"><p>
@@ -80,8 +96,8 @@ class HomeIndex extends React.Component {
                                 <br />- Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />- Created tools with Node to generate millions of records for a sterile dataset
                             </p></article>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <strong>Computer Lab Technician</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (July 2018 > August 2019)</em>
                             <br />
                             <article className="work-item"><p>
@@ -90,21 +106,27 @@ class HomeIndex extends React.Component {
                                 <br />- Wrote multiple batch scripts to resolve common issues students experienced in the labs
                                 <br />- Wrote multiple Tampermonkey scripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities.
                             </p></article>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <strong>Kennel Technician, Vet Tech Assistant</strong>,&nbsp;&nbsp;&nbsp;<em>Caldwell Mill Animal Clinic (August 2017 > June 2019)</em>
                             <br />
                             <article><p>
                                 <br />- <strong>{'{ INSERT BUTTON TO POPUP LIGHTBOX MODAL WITH BEST OF CMAC PICS }'}</strong>
                             </p></article>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <strong>Rideshare Driver</strong>,&nbsp;&nbsp;&nbsp;<em>Uber & Lyft (January 2017 > August 2019)</em>
                             <br />
                             <article className="work-item"><p>
-                                <br />While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi3 and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished.
-                            </p></article>
-                        </p>
+                                <br />While operating as a rideshare driver for both services,
+                                I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber.
+                                Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station
+                                to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks
+                                so that a Mario Kart match (or two) may be finished.
+                                </p>
+                            </article>
+                            <button className="button" onClick={() => {showVid = true; displayVid()} }>See Mario Kart in a car!</button>
+                        </div>
                     </section>
 
                     <section id="projects">
