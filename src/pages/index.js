@@ -87,7 +87,7 @@ class HomeIndex extends React.Component {
                         <h2>Experience</h2>
                         <hr />
                         <div>
-                            <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > March 2020)</em>
+                            <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > Present)</em>
                             <br />
                             <article className="work-item"><p>
                                 <br />- Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'} JSON, COBOL source code, or COBOL linkage files {'}'} into a Markdown table describing the schema to allow direct importation of the table into API documentation
