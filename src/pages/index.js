@@ -63,7 +63,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+                        <p>This site is powered by GatsbyJS and built by Jenkins to a DigitalOcean droplet on a LAMP stack.</p>
                         <ul className="actions">
                             <li><a href="#education" className="button 3u">Education</a></li>
                             <li><a href="#experience" className="button 3u">Experience</a></li>
