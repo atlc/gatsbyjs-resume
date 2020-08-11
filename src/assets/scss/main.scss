@@ -1501,3 +1501,12 @@
 		width: 100%;
 	}
 }
+
+
+.hr-thin {
+    border: 1px solid #a1a1a1 !important;
+}
+
+.hr-thicc {
+    border: 3px solid $border-bottom-color !important;
+}
