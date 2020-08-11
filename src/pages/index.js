@@ -20,6 +20,7 @@ import full06 from '../assets/images/fulls/06.jpg'
 
 import Swal from 'sweetalert2';
 import retropieVideo from '../assets/images/car_retropie_silent.mp4';
+import images from '../components/AnimalImages';
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -35,6 +36,8 @@ class HomeIndex extends React.Component {
         const siteTitle = "Andrew Cartwright - Portfolio"
         const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
         let showVid = false;
+        let showAnimals = false;
+
         const displayVid = () => {
             if (showVid) {
                 Swal.fire({
@@ -46,6 +49,26 @@ class HomeIndex extends React.Component {
                     height: '75vh',
                     confirmButtonText: 'Neat!',
                     onClose: () => showVid = !showVid
+                })
+            }
+        }
+
+        const displayAnimals = () => {
+            if (showAnimals) {
+                Swal.fire({
+                    html:
+                    `<div style="position: relative;padding-bottom: 56.25%;padding-top: 35px;height: 0;overflow: hidden;">
+                        <Gallery images={images.map(({ id, source, thumbnail, caption, description }) => ({
+                            source,
+                            thumbnail,
+                            caption,
+                            description
+                        }))} />
+                    </div>`,
+                    width: '75vw',
+                    height: '75vh',
+                    confirmButtonText: 'Neat!',
+                    onClose: () => showAnimals = !showAnimals
                 })
             }
         }
@@ -113,8 +136,9 @@ class HomeIndex extends React.Component {
                             <strong>Kennel Technician, Vet Tech Assistant</strong>,&nbsp;&nbsp;&nbsp;<em>Caldwell Mill Animal Clinic (August 2017 > June 2019)</em>
                             <br />
                             <article><p>
-                                <br />- <strong>{'{ INSERT BUTTON TO POPUP LIGHTBOX MODAL WITH BEST OF CMAC PICS }'}</strong>
+                                <br />- <strong>CMAC DESCRIPTION</strong>
                             </p></article>
+                            <button className="button" onClick={() => {showAnimals = true; displayAnimals()} }>See some of CMAC's cutest critters (and mine)!</button>
                         </div>
                         <div>
                             <strong>Rideshare Driver</strong>,&nbsp;&nbsp;&nbsp;<em>Uber & Lyft (January 2017 > August 2019)</em>
