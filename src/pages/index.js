@@ -1,42 +1,22 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
 import Layout from '../components/layout'
-import Gallery from '../components/Gallery'
-
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
-
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
 
 import Swal from 'sweetalert2';
 import retropieVideo from '../assets/images/car_retropie_silent.mp4';
-import images from '../components/AnimalImages';
+import animalSlideshow from '../assets/images/slideshow.mp4'
 
-const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
-];
 
 class HomeIndex extends React.Component {
     render() {
         const siteTitle = "Andrew Cartwright - Portfolio"
         const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
+
+
         let showVid = false;
         let showAnimals = false;
+
 
         const displayVid = () => {
             if (showVid) {
@@ -49,7 +29,7 @@ class HomeIndex extends React.Component {
                     height: '75vh',
                     confirmButtonText: 'Neat!',
                     onClose: () => showVid = !showVid
-                })
+                });
             }
         }
 
@@ -58,18 +38,13 @@ class HomeIndex extends React.Component {
                 Swal.fire({
                     html:
                     `<div style="position: relative;padding-bottom: 56.25%;padding-top: 35px;height: 0;overflow: hidden;">
-                        <Gallery images={images.map(({ id, source, thumbnail, caption, description }) => ({
-                            source,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
+                        <video style="position: absolute;top:0;left: 0;width: 100%;height: 100%;" controls><source src="${animalSlideshow}" type="video/mp4"></video>    
                     </div>`,
                     width: '75vw',
                     height: '75vh',
                     confirmButtonText: 'Neat!',
                     onClose: () => showAnimals = !showAnimals
-                })
+                });
             }
         }
 
@@ -86,7 +61,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         </header>
-                        <p>This site is powered by GatsbyJS and built by Jenkins to a DigitalOcean droplet on a LAMP stack. Read more about me below.</p>
+                        <p>This site is built with GatsbyJS and deployed by Jenkins to a LAMP server on DigitalOcean. Read more about me below.</p>
                         <ul className="actions">
                             <li><a href="#education" className="button 3u">Education</a></li>
                             <li><a href="#experience" className="button 3u">Experience</a></li>
@@ -139,6 +114,8 @@ class HomeIndex extends React.Component {
                                 <br />- <strong>CMAC DESCRIPTION</strong>
                             </p></article>
                             <button className="button" onClick={() => {showAnimals = true; displayAnimals()} }>See some of CMAC's cutest critters (and mine)!</button>
+                            <br />
+                            <br />
                         </div>
                         <div>
                             <strong>Rideshare Driver</strong>,&nbsp;&nbsp;&nbsp;<em>Uber & Lyft (January 2017 > August 2019)</em>
@@ -158,12 +135,7 @@ class HomeIndex extends React.Component {
                     <section id="projects">
                         <h2>Projects</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
-                            source,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
+
 
                         <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
