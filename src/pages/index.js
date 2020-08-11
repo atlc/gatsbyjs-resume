@@ -63,7 +63,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         </header>
-                        <p>This site is powered by GatsbyJS and built by Jenkins to a DigitalOcean droplet on a LAMP stack.</p>
+                        <p>This site is powered by GatsbyJS and built by Jenkins to a DigitalOcean droplet on a LAMP stack. Read more about me below.</p>
                         <ul className="actions">
                             <li><a href="#education" className="button 3u">Education</a></li>
                             <li><a href="#experience" className="button 3u">Experience</a></li>
@@ -91,12 +91,12 @@ class HomeIndex extends React.Component {
                             <br />
                             <article className="work-item"><p>
                                 <br />- Spearheaded the founding of the Devops department and automating and improving internal processes where needed
-                                <br />- Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects
-                                <br />- Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'} JSON, COBOL source code, or COBOL linkage files {'}'} into a Markdown table describing the schema to allow direct importation of the table into our API documentation
+                                <br />- Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
+                                <br />- Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'} JSON, COBOL source code, or COBOL linkage files {'}'} into a Markdown table describing the schema to allow rapid importation of the table into our API documentation
                                 <br />- Created an API documentation environment using SlateDocs, extending the functionality to allow deeper nesting with modification of their Ruby backend; had PR merged to fix bug in the main Slate base
                                 <br />- Created a Chocolatey server and automated packaging of the application's components to improve management and deployment to client sites
                                 <br />- Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
-                                <br />- Created tools with Node to generate millions of records for importing to create a sterile dataset
+                                <br />- Created tool with Node to generate millions of records for importing to create a sterile dataset
                             </p></article>
                         </div>
                         <div>
