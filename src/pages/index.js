@@ -87,11 +87,12 @@ class HomeIndex extends React.Component {
                         <h2>Experience</h2>
                         <hr />
                         <div>
-                            <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > Present)</em>
+                            <strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > March 2020)</em>
                             <br />
                             <article className="work-item"><p>
+                                <br />- Spearheaded the founding of the Devops department and automating and improving internal processes where needed
+                                <br />- Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects
                                 <br />- Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'} JSON, COBOL source code, or COBOL linkage files {'}'} into a Markdown table describing the schema to allow direct importation of the table into API documentation
-                                <br />- Created CI/CD server with Jenkins and created multiple pipelines to build & deploy various projects
                                 <br />- Created a Chocolatey server and automated packaging of the application's components to improve management and deployment to client sites
                                 <br />- Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />- Created tools with Node to generate millions of records for a sterile dataset
