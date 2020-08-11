@@ -28,6 +28,7 @@ class HomeIndex extends React.Component {
                     width: '75vw',
                     height: '75vh',
                     confirmButtonText: 'Neat!',
+                    footer: 'All the originals were gone, so these photos will have mixed aspect ratios since they were stripped from my various social media and coerced into the same output',
                     onClose: () => showVid = !showVid
                 });
             }
@@ -111,7 +112,8 @@ class HomeIndex extends React.Component {
                             <strong>Kennel Technician, Vet Tech Assistant</strong>,&nbsp;&nbsp;&nbsp;<em>Caldwell Mill Animal Clinic (August 2017 > June 2019)</em>
                             <br />
                             <article><p>
-                                <br />- <strong>CMAC DESCRIPTION</strong>
+                                <br />
+                                Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed.
                             </p></article>
                             <button className="button" onClick={() => {showAnimals = true; displayAnimals()} }>See some of CMAC's cutest critters (and mine)!</button>
                             <br />
@@ -130,6 +132,22 @@ class HomeIndex extends React.Component {
                             </article>
                             <button className="button" onClick={() => {showVid = true; displayVid()} }>See Mario Kart in a car!</button>
                         </div>
+                    </section>
+
+                    <section id="certifications">
+                        <h2>Certifications</h2>
+                        <hr />
+                        <h4>CompTIA</h4>
+                        <article className="work-item">
+                            <br />- CompTIA Healthcare IT Technician <a href="https://www.certmetrics.com/comptia/public/verification.aspx">(License: CTJDLDWN2KVEK52F)</a>
+                        </article>
+                        <h4>Microsoft</h4>
+                        <article className="work-item">
+                            <br />- MTA: Software Development Fundamentals <a href="https://www.youracclaim.com/badges/2bdeff35-cf12-4228-af03-e3485a0c60d8">(Verification)</a>
+                            <br />- MTA: Database Fundamentals <a href="https://www.youracclaim.com/badges/ddfa48f5-981f-445c-a16b-0adfecd18f6d">(Verification)</a>
+                            <br />- MTA: Security Fundamentals <a href="https://www.youracclaim.com/badges/91a09b81-4a76-448a-be2c-7ea49551e31b">(Verification)</a>
+                            <br />- Microsoft Certified: Azure Fundamentals <a href="https://www.youracclaim.com/badges/7a047bb7-b2eb-4df2-88b0-cf1d6459f7c1">(Verification)</a>
+                        </article>
                     </section>
 
                     <section id="projects">
