@@ -85,13 +85,13 @@ class HomeIndex extends React.Component {
                             <article className="work-item"><br />► The 2016 recipient of the College Scholar’s Award<br />► Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.</article>
                         </p>
                     </section>
-                    <br id="printignore05" />
                     <hr className='hr-thin' />
                     <section id="experience">
                         <h2>Experience</h2>
                         <hr />
                         <div>
-                            <h3><strong>Hubbard Systems</strong>,&nbsp;&nbsp;&nbsp;<em>Devops Engineer (June 2019 > March 2020)</em></h3>
+                            <h3><strong>Hubbard Systems</strong></h3>
+                            <h4>&nbsp;&nbsp;&nbsp;<em>Devops Engineer (June 2019 > March 2020)</em></h4>
                             <article className="work-item">
                                 ► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
                                 <br />► Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
@@ -101,7 +101,7 @@ class HomeIndex extends React.Component {
                                 <br />► Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />► Created tool with Node to generate millions of records for importing to create a sterile dataset
                             </article>
-                            <h3><em>Application Systems Analyst (November 2015 > May 2016)</em></h3>
+                            <h4>&nbsp;&nbsp;&nbsp;<em>Application Systems Analyst (November 2015 > May 2016)</em></h4>
                             <article className="work-item">
                                 ► Trained and assisted clients in daily usage of accounting application
                                 <br />► Outside of application support, I was involved with SQL Server, Windows & Linux server administration
@@ -109,7 +109,8 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Jefferson State Community College</strong>,&nbsp;&nbsp;&nbsp;<em>Computer Lab Technician (July 2018 > August 2019)</em></h3>
+                            <h3><strong>Jefferson State Community College</strong></h3>
+                            <h4>&nbsp;&nbsp;&nbsp;<em>Computer Lab Technician (July 2018 > August 2019)</em></h4>
                             <article className="work-item">
                                 ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
                                 <br />► Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
@@ -119,7 +120,8 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Vincari</strong>,&nbsp;&nbsp;&nbsp;<em>Software Developer (May 2016 > February 2017)</em></h3>
+                            <h3><strong>Vincari</strong></h3>
+                            <h4>&nbsp;&nbsp;&nbsp;<em>Software Developer (May 2016 > February 2017)</em></h4>
                             <article className="work-item">
                                 ► Created new features and fixed existing bugs for EMR/Operative documentation webapp on a stack of Ruby on Rails, Angular.js, and MySQL
                                 <br />► Worked on infrastructure within AWS, primarily in EC2, VPCs, and with S3.
@@ -135,12 +137,7 @@ class HomeIndex extends React.Component {
                                 <br />► <em>Greystone Golf & Country Club – Server, Bartender, Event Staff (Apr 2011 > Nov 2015)</em>
                             </article>
                         </div>
-                        <hr />
-                        <br id="printignore03" />
-                        <br id="printignore04" />          
                     </section>
-                    <br id="printignore02" />
-                    <br id="printignore01" />
                     <hr className='hr-thin' />
                     <section id="certifications">
                         <h2>Certifications</h2>
