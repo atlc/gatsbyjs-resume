@@ -91,7 +91,7 @@ class HomeIndex extends React.Component {
                         <hr />
                         <div>
                             <h3><strong>Hubbard Systems</strong></h3>
-                            <h4>&nbsp;&nbsp;&nbsp;<em>Devops Engineer (June 2019 > March 2020)</em></h4>
+                            <h4 className="align-center"><em>Devops Engineer (June 2019 > March 2020)</em></h4>
                             <article className="work-item">
                                 ► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
                                 <br />► Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
@@ -101,7 +101,7 @@ class HomeIndex extends React.Component {
                                 <br />► Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />► Created tool with Node to generate millions of records for importing to create a sterile dataset
                             </article>
-                            <h4>&nbsp;&nbsp;&nbsp;<em>Application Systems Analyst (November 2015 > May 2016)</em></h4>
+                            <h4 className="align-center"><em>Application Systems Analyst (November 2015 > May 2016)</em></h4>
                             <article className="work-item">
                                 ► Trained and assisted clients in daily usage of accounting application
                                 <br />► Outside of application support, I was involved with SQL Server, Windows & Linux server administration
@@ -110,7 +110,7 @@ class HomeIndex extends React.Component {
                         <hr />
                         <div>
                             <h3><strong>Jefferson State Community College</strong></h3>
-                            <h4>&nbsp;&nbsp;&nbsp;<em>Computer Lab Technician (July 2018 > August 2019)</em></h4>
+                            <h4 className="align-center"><em>Computer Lab Technician (July 2018 > August 2019)</em></h4>
                             <article className="work-item">
                                 ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
                                 <br />► Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
@@ -121,7 +121,7 @@ class HomeIndex extends React.Component {
                         <hr />
                         <div>
                             <h3><strong>Vincari</strong></h3>
-                            <h4>&nbsp;&nbsp;&nbsp;<em>Software Developer (May 2016 > February 2017)</em></h4>
+                            <h4 className="align-center"><em>Software Developer (May 2016 > February 2017)</em></h4>
                             <article className="work-item">
                                 ► Created new features and fixed existing bugs for EMR/Operative documentation webapp on a stack of Ruby on Rails, Angular.js, and MySQL
                                 <br />► Worked on infrastructure within AWS, primarily in EC2, VPCs, and with S3.
