@@ -14,6 +14,7 @@ class HomeIndex extends React.Component {
         import('print-js')
         .then((printJS) => this.printJS = printJS);
     }
+
     render() {
         const siteTitle = "Andrew Cartwright - Portfolio"
         const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
@@ -90,9 +91,9 @@ class HomeIndex extends React.Component {
                         <h2>Experience</h2>
                         <hr />
                         <div>
-                            <h3><strong>Devops Engineer</strong>,&nbsp;&nbsp;&nbsp;<em>Hubbard Systems (June 2019 > March 2020)</em></h3>
+                            <h3><strong>Hubbard Systems</strong>,&nbsp;&nbsp;&nbsp;<em>Devops Engineer (June 2019 > March 2020)</em></h3>
                             <article className="work-item">
-                                <br />► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
+                                ► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
                                 <br />► Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
                                 <br />► Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'}JSON, COBOL source code, or COBOL linkage files{'}'} into a Markdown table describing the schema to allow rapid importation of the table into our API documentation
                                 <br />► Created an API documentation environment using SlateDocs, extending the functionality to allow deeper nesting with modification of their Ruby backend; had PR merged to fix bug in the main Slate base
@@ -100,12 +101,17 @@ class HomeIndex extends React.Component {
                                 <br />► Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />► Created tool with Node to generate millions of records for importing to create a sterile dataset
                             </article>
+                            <h3><em>Application Systems Analyst (November 2015 > May 2016)</em></h3>
+                            <article className="work-item">
+                                ► Trained and assisted clients in daily usage of accounting application
+                                <br />► Outside of application support, I was involved with SQL Server, Windows & Linux server administration
+                            </article>
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Computer Lab Technician</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (July 2018 > August 2019)</em></h3>
+                            <h3><strong>Jefferson State Community College</strong>,&nbsp;&nbsp;&nbsp;<em>Computer Lab Technician (July 2018 > August 2019)</em></h3>
                             <article className="work-item">
-                                <br />► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
+                                ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
                                 <br />► Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
                                 <br />► Wrote multiple batch scripts to resolve common issues students experienced in the labs
                                 <br />► Wrote multiple Tampermonkey scripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities.
@@ -113,23 +119,25 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                        <br />
-                            <h3><strong>Kennel Technician</strong>,&nbsp;&nbsp;&nbsp;<em>Caldwell Mill Animal Clinic (August 2017 > June 2019)</em></h3>
+                            <h3><strong>Vincari</strong>,&nbsp;&nbsp;&nbsp;<em>Software Developer (May 2016 > February 2017)</em></h3>
                             <article className="work-item">
-                                <br />► Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed.
+                                ► Created new features and fixed existing bugs for EMR/Operative documentation webapp on a stack of Ruby on Rails, Angular.js, and MySQL
+                                <br />► Worked on infrastructure within AWS, primarily in EC2, VPCs, and with S3.
+                                <br />► Created a logging/analytics framework using SumoLogic in order to give our Implementation & Support teams a tool with which they could easily assist clients.While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished.
                             </article>
-                            <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
+                        </div>
+                        <hr />
+                        <div>
+                            <h3><strong>Miscellaneous</strong></h3>
+                            <article className="work-item">
+                                ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 > June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
+                                <br />► <em>Uber & Lyft, Rideshare Driver (January 2017 > August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
+                                <br />► <em>Greystone Golf & Country Club – Server, Bartender, Event Staff (Apr 2011 > Nov 2015)</em>
+                            </article>
                         </div>
                         <hr />
                         <br id="printignore03" />
-                        <br id="printignore04" />
-                        <div>
-                            <h3><strong>Rideshare Driver</strong>,&nbsp;&nbsp;&nbsp;<em>Uber & Lyft (January 2017 > August 2019)</em></h3>
-                            <article className="work-item">
-                                ► While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished.
-                            </article>
-                            <button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
-                        </div>
+                        <br id="printignore04" />          
                     </section>
                     <br id="printignore02" />
                     <br id="printignore01" />
