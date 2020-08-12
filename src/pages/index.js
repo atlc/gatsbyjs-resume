@@ -90,7 +90,7 @@ class HomeIndex extends React.Component {
                         <h2>Experience</h2>
                         <hr />
                         <div>
-                            <h3><strong>Hubbard Systems</strong></h3>
+                            <h3 className="align-center"><strong>Hubbard Systems</strong></h3>
                             <h4 className="align-center"><em>Devops Engineer (June 2019 > March 2020)</em></h4>
                             <article className="work-item">
                                 ► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
@@ -109,7 +109,7 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Jefferson State Community College</strong></h3>
+                            <h3 className="align-center"><strong>Jefferson State Community College</strong></h3>
                             <h4 className="align-center"><em>Computer Lab Technician (July 2018 > August 2019)</em></h4>
                             <article className="work-item">
                                 ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
@@ -120,7 +120,7 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Vincari</strong></h3>
+                            <h3 className="align-center"><strong>Vincari</strong></h3>
                             <h4 className="align-center"><em>Software Developer (May 2016 > February 2017)</em></h4>
                             <article className="work-item">
                                 ► Created new features and fixed existing bugs for EMR/Operative documentation webapp on a stack of Ruby on Rails, Angular.js, and MySQL
@@ -130,7 +130,7 @@ class HomeIndex extends React.Component {
                         </div>
                         <hr />
                         <div>
-                            <h3><strong>Miscellaneous</strong></h3>
+                            <h3 className="align-center"><strong>Miscellaneous</strong></h3>
                             <article className="work-item">
                                 ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 > June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
                                 <br />► <em>Uber & Lyft, Rideshare Driver (January 2017 > August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
