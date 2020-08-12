@@ -48,7 +48,7 @@ class HomeIndex extends React.Component {
                         `<h2>Andrew Cartwright / Full-stack Javascript Developer</h2>
                         <p>❴ andrewlloydcartwright@gmail.com， https://github.com/atlc， https://www.linkedin.com/in/atlc-/ ❵</p>
                         <hr className='hr-thin' />`,
-                    ignoreElements: ['displayAnimalsButton', 'displayRetropieButton', 'displayAnglerfishButton', 'projects', 'experimental', 'printignore01', 'printignore02', 'printignore03', 'printignore04', 'printignore05']
+                    ignoreElements: ['displayAnimalsButton', 'displayRetropieButton', 'displayAnglerfishButton', 'displayArcadeButton', 'displayHeartButton', 'displayDoorButton', 'experimental']
                 })
             });
         }
@@ -69,7 +69,7 @@ class HomeIndex extends React.Component {
                             <li><a href="#education" className="button 3u">Education</a></li>
                             <li><a href="#experience" className="button 3u">Experience</a></li>
                             <li><a href="#certifications" className="button 3u">Certifications</a></li>
-                            <li><a href="#projects" className="button 3u">Portfolio</a></li>
+                            <li><a href="#projects" className="button 3u">Projects</a></li>
                         </ul>
                     </section>
                     <hr className="hr-thin" />
@@ -82,7 +82,7 @@ class HomeIndex extends React.Component {
                         <p><strong>A.S. Mathematics, & A.S. Physics</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2020 > Present)</em><br /></p>
                         <p>
                             <strong>A.A.S. Computer Science – Programming</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2018)</em>
-                            <article className="work-item"><br />► The 2016 recipient of the College Scholar’s Award<br />► Participated on the Scholar’s Bowl team for 5 semesters, captaining for 3, and finishing my career as the second highest scorer in school history.</article>
+                            <article className="work-item"><br />► The 2016 recipient of the College Scholar’s Award<br />► Participated on the Scholar’s Bowl team for 5 semesters, serving as captain for 3</article>
                         </p>
                     </section>
                     <hr className='hr-thin' />
@@ -132,8 +132,8 @@ class HomeIndex extends React.Component {
                         <div>
                             <h3 className="align-center"><strong>Miscellaneous</strong></h3>
                             <article className="work-item">
-                                ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 > June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
-                                <br />► <em>Uber & Lyft, Rideshare Driver (January 2017 > August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
+                                ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 > June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <br /> <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
+                                <br />► <em>Uber & Lyft, Rideshare Driver (January 2017 > August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <br /><button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
                                 <br />► <em>Greystone Golf & Country Club – Server, Bartender, Event Staff (Apr 2011 > Nov 2015)</em>
                             </article>
                         </div>
@@ -168,10 +168,10 @@ class HomeIndex extends React.Component {
                         </article>
                         <h4 id="arduino">Arduino</h4>
                         <article className="work-item">
-                            ► <a href="https://github.com/atlc/WearMyHeartOnMySleeve">WearMyHeartOnMySleeve</a>: This was my first introduction to Arduino - a Halloween costume where I had planned to have a heart monitor display my current pulse on my sleeve. I ran into issues with the sensor's sensitivity, so the numbers were instead fudged since I started the project the week of the party. <br /> <button className="button" onClick={() => { showMedia = true; displayMedia(heartSleeve, false) }}>See the costume here!</button>
+                            ► <a href="https://github.com/atlc/WearMyHeartOnMySleeve">WearMyHeartOnMySleeve</a>: This was my first introduction to Arduino - a Halloween costume where I had planned to have a heart monitor display my current pulse on my sleeve. I ran into issues with the sensor's sensitivity, so the numbers were instead fudged since I started the project the week of the party. <br /> <button id="displayHeartButton" className="button" onClick={() => { showMedia = true; displayMedia(heartSleeve, false) }}>See the costume here!</button>
                             <br />► <a href="https://github.com/atlc/Halloween18">The (Halloween) Anglerfish</a>: This was definitely a step up in project awesomeness. My partner and I each had our own giant grotesque Anglerfish costumes with some fun light shows due to the awesomeness of neopixels. We won a handful of costume contests, including one where we won a cruise to Mexico (the background image was taken from visiting Dzibilchaltún)!<br /> <button className="button" id="displayAnglerfishButton" onClick={() => { showMedia = true; displayMedia(anglerfish, true) }}>See her costume here (with mine in the background)!</button>
-                            <br />► <a href="https://github.com/atlc/Halloween18">The (Halloween) Arcade</a>: In our second year of sweeping Birmingham costume contests, my partner and I /were/ arcade games - she was WhacAMole and I was a crane game. <br /> <button className="button" onClick={() => { showMedia = true; displayMedia(arcade, true) }}>See both costumes here, mostly finished!</button>
-                            <br />► <a href="https://github.com/atlc/JSCC-Doors-2018/blob/master/Me/Door.ino">Stranger Things office door contest</a>: Created a Stranger Things-themed "alphabet light" with Neopixels for a Christmas door-decoration contest that would spell out ‘JEFF STATE’ and then return to randomized colors to help advertise JSCC's C++ course. <br /> <button className="button" onClick={() => { showMedia = true; displayMedia(officeDoor, true) }}>See the door!</button>
+                            <br />► <a href="https://github.com/atlc/Halloween18">The (Halloween) Arcade</a>: In our second year of sweeping Birmingham costume contests, my partner and I /were/ arcade games - she was WhacAMole and I was a crane game. <br /> <button id="displayArcadeButton"  className="button" onClick={() => { showMedia = true; displayMedia(arcade, true) }}>See both costumes here, mostly finished!</button>
+                            <br />► <a href="https://github.com/atlc/JSCC-Doors-2018/blob/master/Me/Door.ino">Stranger Things office door contest</a>: Created a Stranger Things-themed "alphabet light" with Neopixels for a Christmas door-decoration contest that would spell out ‘JEFF STATE’ and then return to randomized colors to help advertise JSCC's C++ course. <br /> <button id="displayDoorButton" className="button" onClick={() => { showMedia = true; displayMedia(officeDoor, true) }}>See the door!</button>
                         </article>
                         <h4>Open-source contributions</h4>
                         <article className="work-item">
