@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Swal from 'sweetalert2';
-import printJS from 'print-js';
 import Layout from '../components/layout';
 import retropieVideo from '../assets/images/car_retropie_silent.mp4';
 import animalSlideshow from '../assets/images/slideshow.mp4';
@@ -11,6 +10,10 @@ import arcade from '../assets/images/arcade.mp4';
 import officeDoor from '../assets/images/office-door.mp4';
 
 class HomeIndex extends React.Component {
+    componentDidMount() {
+        import('print-js')
+        .then((printJS) => this.printJS = printJS);
+    }
     render() {
         const siteTitle = "Andrew Cartwright - Portfolio"
         const siteDescription = "Portfolio site for Andrew Cartwright, of Birmingham, AL"
