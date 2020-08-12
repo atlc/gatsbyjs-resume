@@ -1510,3 +1510,21 @@
 .hr-thicc {
     border: 2px solid #787878 !important;
 }
+
+header#header {
+	div.inner  {
+		h1 > strong, h1 > em, p > em {
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
+		}
+	}
+}
+
+div#footer {
+	div.inner  {
+		ul > li {
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
+		}
+	}
+}
