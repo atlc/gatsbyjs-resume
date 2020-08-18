@@ -1,6 +1,6 @@
 # Portfolio site
 
-Link at => [atlc.dev](https://atlc.dev)
+## Live at [atlc.dev](https://atlc.dev)
 
 ---
 
