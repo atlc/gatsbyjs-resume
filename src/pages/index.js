@@ -116,7 +116,8 @@ class HomeIndex extends React.Component {
                                 ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
                                 <br />► Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
                                 <br />► Wrote multiple batch scripts to resolve common issues students experienced in the labs
-                                <br />► Wrote multiple Tampermonkey scripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities.
+                                <br />► Wrote multiple userscripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities, allowing me to be proactive and quickly reactive to issues that came up
+                                <br />► Wrote a userscript to automate filling out my timesheet and remind me to send them to my supervisor for approval
                             </article>
                         </div>
                         <hr />
