@@ -91,6 +91,26 @@ class HomeIndex extends React.Component {
                         <h2>Experience</h2>
                         <hr />
                         <div>
+                            <h3 className="align-center"><strong>ProctorU</strong></h3>
+                            <h4 className="align-center"><em>Intervention Specialist (Sept 2020 > Present)</em></h4>
+                            <article className="work-item">
+                                ► Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br />► Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br />► Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </article>
+                        </div>
+                        <hr />
+                        <div>
+                            <h3 className="align-center"><strong>Mathnasium</strong></h3>
+                            <h4 className="align-center"><em>Math Tutor (Sept 2020 > Present)</em></h4>
+                            <article className="work-item">
+                                ► Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br />► Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br />► Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </article>
+                        </div>
+                        <hr />
+                        <div>
                             <h3 className="align-center"><strong>Hubbard Systems</strong></h3>
                             <h4 className="align-center"><em>Devops Engineer (June 2019 > March 2020)</em></h4>
                             <article className="work-item">
