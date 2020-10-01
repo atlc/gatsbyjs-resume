@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Swal from 'sweetalert2';
 import Layout from '../components/layout';
+import resume from '../assets/resume.pdf';
 import retropieVideo from '../assets/images/car_retropie_silent.mp4';
 import animalSlideshow from '../assets/images/slideshow.mp4';
 import anglerfish from '../assets/images/anglerfish.mp4';
@@ -63,7 +64,8 @@ class HomeIndex extends React.Component {
                     <section id="intro">
                         <header className="major">
                             <h2 className="align-center">Andrew Cartwright</h2>
-                            <h5 className="align-center"><em>Well-rounded entry-level IT & software professional, currently studying towards becoming a full-stack JS developer with an eventual goal of working in data analytics.</em></h5>
+                            <h5 className="align-center"><em>Well-rounded entry-level IT & software professional, currently studying towards degrees in Mathematics and Computer Science, with an eventual goal of working in data analytics.</em></h5>
+                            <h5 className="align-center"><a href={resume}>Download my PDF resume here.</a></h5>
                         </header>
                         <hr />
                         <ul className="actions">
