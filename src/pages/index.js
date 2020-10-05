@@ -64,7 +64,7 @@ class HomeIndex extends React.Component {
                     <section id="intro">
                         <header className="major">
                             <h2 className="align-center">Andrew Cartwright</h2>
-                            <h5 className="align-center"><em>Well-rounded entry-level IT & software professional, currently studying towards degrees in Mathematics and Computer Science, with an eventual goal of working in data analytics.</em></h5>
+                            <h5 className="align-center"><em>Well-rounded entry-level IT & software professional, currently studying towards degrees in Mathematics and Physics, with an eventual goal of working in data analytics.</em></h5>
                             <h5 className="align-center"><a href={resume}>Download my PDF resume here.</a></h5>
                         </header>
                         <hr />
