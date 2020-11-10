@@ -64,7 +64,7 @@ class HomeIndex extends React.Component {
                     <section id="intro">
                         <header className="major">
                             <h2 className="align-center">Andrew Cartwright</h2>
-                            <h5 className="align-center"><em>Well-rounded entry-level IT & software professional, currently studying towards degrees in Mathematics and Physics, with an eventual goal of working in data analytics.</em></h5>
+                            <h5 className="align-center"><em>Well-rounded entry-level IT &amp; software professional, currently working as a TA/Instructor in <a href="https://covalence.io">a full-stack JS Bootcamp</a>.  Passionate about data and analytics, I am also working towards obtaining degrees in Mathematics and Physics.</em></h5>
                             <h5 className="align-center"><a href={resume}>Download my PDF resume here.</a></h5>
                         </header>
                         <hr />
@@ -81,8 +81,8 @@ class HomeIndex extends React.Component {
                     <section id="education">
                         <h2>Education</h2>
                         <hr />
-                        <p><strong>Full-stack JS Antidegree</strong>,&nbsp;&nbsp;&nbsp;<em>Covalence.io (2020 > Present)</em><br /></p>
-                        <p><strong>A.S. Mathematics, & A.S. Physics</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2020 > Present)</em><br /></p>
+                        <p><strong>Full-stack JS Antidegree</strong>,&nbsp;&nbsp;&nbsp;<em>Covalence.io (2020)</em><br /></p>
+                        <p><strong>A.S. Mathematics, &amp; A.S. Physics</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2020 &gt; Present)</em><br /></p>
                         <p>
                             <strong>A.A.S. Computer Science – Programming</strong>,&nbsp;&nbsp;&nbsp;<em>Jefferson State Community College (2018)</em>
                             <article className="work-item"><br />► The 2016 recipient of the College Scholar’s Award<br />► Participated on the Scholar’s Bowl team for 5 semesters, serving as captain for 3</article>
@@ -92,51 +92,51 @@ class HomeIndex extends React.Component {
                     <section id="experience">
                         <h2>Experience</h2>
                         <hr />
-                        {/* <div>
-                            <h3 className="align-center"><strong>ProctorU</strong></h3>
-                            <h4 className="align-center"><em>Intervention Specialist (Sept 2020 > Present)</em></h4>
-                            <article className="work-item">
+                        <div>
+                            <h3 className="align-center"><strong>Covalence.io</strong></h3>
+                            <h4 className="align-center"><em>Teaching Assistant (November 2020 &gt; Present)</em></h4>
+                            {/* <article className="work-item">
                                 ► Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 <br />► Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 <br />► Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </article>
+                            </article> */}
                         </div>
                         <hr />
                         <div>
-                            <h3 className="align-center"><strong>Mathnasium</strong></h3>
-                            <h4 className="align-center"><em>Math Tutor (Sept 2020 > Present)</em></h4>
-                            <article className="work-item">
+                            <h3 className="align-center"><strong>Appen</strong></h3>
+                            <h4 className="align-center"><em>Data Entry Specialist (August 2020 &gt; November 2020)</em></h4>
+                            {/* <article className="work-item">
                                 ► Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 <br />► Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 <br />► Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </article>
+                            </article> */}
                         </div>
-                        <hr /> */}
+                        <hr />
                         <div>
                             <h3 className="align-center"><strong>Hubbard Systems</strong></h3>
-                            <h4 className="align-center"><em>Devops Engineer (June 2019 > March 2020)</em></h4>
+                            <h4 className="align-center"><em>Devops Engineer (June 2019 &gt; August 2020)</em></h4>
                             <article className="work-item">
                                 ► Spearheaded the founding of the Devops department and automating and improving internal processes where needed
-                                <br />► Created CI/CD environment with Jenkins and created multiple pipelines to build & deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
+                                <br />► Created CI/CD environment with Jenkins and created multiple pipelines to build &amp; deploy various projects - from compiling multiple COBOL backends to building the Electron-React frontend
                                 <br />► Created a <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh?hl=en-US">Chrome extension</a> to translate {'{'}JSON, COBOL source code, or COBOL linkage files{'}'} into a Markdown table describing the schema to allow rapid importation of the table into our API documentation
                                 <br />► Created an API documentation environment using SlateDocs, extending the functionality to allow deeper nesting with modification of their Ruby backend; had PR merged to fix bug in the main Slate base
                                 <br />► Created a Chocolatey server and automated packaging of the application's components to improve management and deployment to client sites
                                 <br />► Created an installation script in PowerShell to manage all the Chocolatey packages in addition to setting system-wide configurations to automate client installs
                                 <br />► Created tool with Node to generate millions of records for importing to create a sterile dataset
                             </article>
-                            <h4 className="align-center"><em>Application Systems Analyst (November 2015 > May 2016)</em></h4>
+                            <h4 className="align-center"><em>Application Systems Analyst (November 2015 &gt; May 2016)</em></h4>
                             <article className="work-item">
                                 ► Trained and assisted clients in daily usage of accounting application
-                                <br />► Outside of application support, I was involved with SQL Server, Windows & Linux server administration
+                                <br />► Outside of application support, I was involved with SQL Server, Windows &amp; Linux server administration
                             </article>
                         </div>
                         <hr />
                         <div>
                             <h3 className="align-center"><strong>Jefferson State Community College</strong></h3>
-                            <h4 className="align-center"><em>Computer Lab Technician (July 2018 > August 2019)</em></h4>
+                            <h4 className="align-center"><em>Computer Lab Technician (July 2018 &gt; August 2019)</em></h4>
                             <article className="work-item">
                                 ► Maintained four (4) computer labs and approximately twenty (20) classrooms on the top floor
-                                <br />► Supported users with all desktop needs, in addition to tutoring & mentoring for programming classes
+                                <br />► Supported users with all desktop needs, in addition to tutoring &amp; mentoring for programming classes
                                 <br />► Wrote multiple batch scripts to resolve common issues students experienced in the labs
                                 <br />► Wrote multiple userscripts to monitor networked printers, providing me updates on their statuses, health, and supply quantities, allowing me to be proactive and quickly reactive to issues that came up
                                 <br />► Wrote a userscript to automate filling out my timesheet and remind me to send them to my supervisor for approval
@@ -145,20 +145,20 @@ class HomeIndex extends React.Component {
                         <hr />
                         <div>
                             <h3 className="align-center"><strong>Vincari</strong></h3>
-                            <h4 className="align-center"><em>Software Developer (May 2016 > February 2017)</em></h4>
+                            <h4 className="align-center"><em>Software Developer (May 2016 &gt; February 2017)</em></h4>
                             <article className="work-item">
                                 ► Created new features and fixed existing bugs for EMR/Operative documentation webapp on a stack of Ruby on Rails, Angular.js, and MySQL
                                 <br />► Worked on infrastructure within AWS, primarily in EC2, VPCs, and with S3.
-                                <br />► Created a logging/analytics framework using SumoLogic in order to give our Implementation & Support teams a tool with which they could easily assist clients.
+                                <br />► Created a logging/analytics framework using SumoLogic in order to give our Implementation &amp; Support teams a tool with which they could easily assist clients.
                             </article>
                         </div>
                         <hr />
                         <div>
                             <h3 className="align-center"><strong>Miscellaneous</strong></h3>
                             <article className="work-item">
-                                ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 > June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <br /> <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
-                                <br />► <em>Uber & Lyft, Rideshare Driver (January 2017 > August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <br /><button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
-                                <br />► <em>Greystone Golf & Country Club – Server, Bartender, Event Staff (Apr 2011 > Nov 2015)</em>
+                                ► <em>Caldwell Mill Animal Clinic, Kennel Technician (August 2017 &gt; June 2019)</em>: Responsibilities included day-to-day upkeep of the clinic, and care for the animals present for boarding, including: preparing and feeding the animals with their required diet, walking the dogs to ensure they are adequately exercised and socialized, giving baths with medical services, and assisting the veterinarians and the veterinary technicians in their daily roles as needed. <br /> <button className="button" id="displayAnimalsButton" onClick={() => { showMedia = true; displayMedia(animalSlideshow, true, 'The originals of these images were lost, so all of them were stripped from my social media and forced into the same aspect ratio when generating the slideshow, apologies for the distortions.') }}>See some of CMAC's cutest critters (and mine)!</button>
+                                <br />► <em>Uber &amp; Lyft, Rideshare Driver (January 2017 &gt; August 2017)</em>: While operating as a rideshare driver for both services, I provided excellent service, maintaining a perfect 5.00/5.00 rating and consistently received the “Above and Beyond” driver award with Uber. Additionally, I implemented a project using a Raspberry Pi and RetroPie to create a video game emulation station to allow 2 passengers to play classic videogames for the duration of the ride, frequently receiving requests to circle extra blocks so that a Mario Kart match (or two) may be finished. <br /><button className="button" id="displayRetropieButton" onClick={() => { showMedia = true; displayMedia(retropieVideo, true) }}>See Mario Kart in a car!</button>
+                                <br />► <em>Greystone Golf &amp; Country Club – Server, Bartender, Event Staff (Apr 2011 &gt; Nov 2015)</em>
                             </article>
                         </div>
                     </section>
@@ -187,7 +187,7 @@ class HomeIndex extends React.Component {
                         <article className="work-item">
                             ► <a href="https://github.com/atlc/shitpostify">json-or-cobol-to-md-schema</a>:  This extension allows one to select a body of JSON, our COBOL source code (either a raw file or a linkage library), or just a regular object, and would parse through those bodies, extract the table, and would return a string of Markdown text with a table describing that endpoint/object's schema. This allowed us to paste the Markdown into API documentation instantly, instead of having to write those by hand, saving us an incalculable amount of time for an application with over 300 endpoints, dozens of which that had hundreds of fields. Despite the very niche and almost propriety application of it (though remaining fully open-source), it still manages to maintain over 35 active users on the <a href="https://chrome.google.com/webstore/detail/json-or-cobol-to-md-schem/fkenokkcpcdhipimcljpdamfaggbbelh">Chrome Web Store</a>.
                             <br />► <a href="https://github.com/atlc/shitpostify">Shitpostify</a>: The (in)appropriately named extension allows one to select a body of text, right click it, transform the text into an emoji-laden nightmare, and attach the transformed text to the clipboard. It maintains over 40 active users on the <a href="https://chrome.google.com/webstore/detail/shitpostify/dojihbiflikelfjnoaljoeiklhgdnijp">Chrome Web Store</a>.
-                            <br />► <a href="https://github.com/atlc/Tampermonkey-Scripts/blob/master/PrintMonitorMaster.js">Miscellaneous scripts for Jeff State</a>: I created a handful of Tampermonkey scripts to monitor the networked printers in the surrounding labs, allowing me to be proactive & quickly reactive about issues that may arise. 
+                            <br />► <a href="https://github.com/atlc/Tampermonkey-Scripts/blob/master/PrintMonitorMaster.js">Miscellaneous scripts for Jeff State</a>: I created a handful of Tampermonkey scripts to monitor the networked printers in the surrounding labs, allowing me to be proactive &amp; quickly reactive about issues that may arise. 
                             <br />► <a href="https://github.com/atlc/Tampermonkey-Scripts/blob/master/ChaosProTips.js">ChaosProTips</a>: Just for fun, a userscript for Reddit that stripped out all identifying information when viewing a multireddit of multiple *ProTip subreddits, including "IllegalLifeProTips", "LifeProTips", "ShittyLifeProTips", and "UnethicalLifeProTips". Had a feature to randomize the instances of their abbreviations in the titles for maximum chaos. Written with compatibility for both the new reddit redesign and the classic design.
                         </article>
                         <h4 id="arduino">Arduino</h4>
